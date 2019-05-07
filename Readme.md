@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
-* Студент: [Александр Ильин](https://up.htmlacademy.ru/htmlcss/25/user/962747).
-* Наставник: `Неизвестно`.
+- Студент: [Александр Ильин](https://up.htmlacademy.ru/htmlcss/25/user/962747).
+- Наставник: [Антон Игнатенко](https://up.htmlacademy.ru/htmlcss/25/user/987931).
 
 ---
 
