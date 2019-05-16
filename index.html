@@ -5,9 +5,9 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-    <header class="main-header">
-      <nav class="main-header-navigation">
-        <a class="main-header-logo">
+    <div class="container">
+      <header class="main-header">
+        <a href="index.html" class="header-logo">
           <img
             src="http://placehold.it/164x197"
             alt="Логотип магазина «Device»"
@@ -15,90 +15,99 @@
             height="36"
           />
         </a>
-        <input
-          class="main-header-search"
-          type="text"
-          placeholder="Поиск по сайту"
-        />
-        <ul class="user-header-navigation">
-          <li><a href="#">Войти</a></li>
-          <li><a href="#">Сравнить</a></li>
-          <li><a href="#">Корзина</a></li>
-        </ul>
-        <ul class="site-header-navigation">
-          <li><a href="#">Каталог товаров</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main class="container">
-      <h1 class="visualy-hidden">Магазин гаджетов «Device»</h1>
-      <!-- Скоро тут будет блок галерея и доставка -->
-      <section class="about">
-        <h2>О нас</h2>
-        <p>
-          Огромный выбор гаджетов не оставит равнодушным гика, который есть в
-          каждом из нас.
-        </p>
+        <nav class="header-nav">
+          <label class="search-wrapper">
+            <input
+              class="header-search"
+              type="search"
+              placeholder="Поиск по сайту"
+            />
+          </label>
+          <ul class="nav-list">
+            <li><a href="#" class="nav-item">Войти</a></li>
+            <li><a href="#" class="nav-item">Сравнить</a></li>
+            <li><a href="#" class="nav-item">Корзина</a></li>
+          </ul>
+          <ul class="menu-list">
+            <li><a href="#" class="menu-item">Каталог товаров</a></li>
+            <li><a href="#" class="menu-item">Доставка</a></li>
+            <li><a href="#" class="menu-item">Гарантия</a></li>
+            <li><a href="#" class="menu-item">Контакты</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main-container">
+        <h1 class="visualy-hidden">Магазин гаджетов «Device»</h1>
+        <!-- Скоро тут будет блок галерея и доставка -->
+        <section class="about">
+          <h2>
+            <span class="about-header">
+              О нас
+            </span>
+          </h2>
+          <p>
+            Огромный выбор гаджетов не оставит равнодушным гика, который есть в
+            каждом из нас.
+          </p>
 
-        <p>
-          Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE
-          работает со многими транспортными компаниями:
-        </p>
+          <p>
+            Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE
+            работает со многими транспортными компаниями:
+          </p>
 
-        <ul class="about-cities-list">
-          <li>Деловые Линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
+          <ul class="about-cities-list">
+            <li>Деловые Линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+          <a href="#" class="button">Подробнее о нас</a>
+        </section>
+        <section class="contacts">
+          <h2>
+            <span class="contacts-header">
+              Контакты
+            </span>
+          </h2>
+          <p>
+            Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
+            проверить работоспособность покупки. Всякое бывает.
+          </p>
+          <div class="map"></div>
+          <a href="#" class="button">Напишите нам</a>
+        </section>
+      </main>
+      <footer class="footer">
+        <a class="footer-logo">
+          <img
+            src="http://placehold.it/164x197"
+            alt="Логотип магазина «Device»"
+            width="164"
+            height="36"
+          />
+        </a>
+        <div class="footer-address">г. Москва, ул. Строителей, 15</div>
+        <ul class="footer-nav">
+          <li><a href="#" class="nav-item">Доставка</a></li>
+          <li><a href="#" class="nav-item">Гарантия</a></li>
+          <li><a href="#" class="nav-item">Контакты</a></li>
         </ul>
-        <a href="#" class="button">Подробнее о нас</a>
-      </section>
-      <section class="contacts">
-        <h2>Контакты</h2>
-        <p>
-          Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
-          проверить работоспособность покупки. Всякое бывает.
-        </p>
-        <img
-          src="http://placehold.it/194x30"
-          alt="Карта проезда"
-          width="194"
-          height="30"
-        />
-        <a href="#" class="button">Напишите нам</a>
-      </section>
-    </main>
-    <footer class="main-footer">
-      <a class="main-footer-logo">
-        <img
-          src="http://placehold.it/164x197"
-          alt="Логотип магазина «Device»"
-          width="164"
-          height="36"
-        />
-      </a>
-      <address class="footer-address">г. Москва, ул. Строителей, 15</address>
-      <ul class="footer-site-navigation">
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-      <div class="footer-social">
-        <ul>
-          <li><a href="#">facebook</a></li>
-          <li><a href="#">instagram</a></li>
-          <li><a href="#">twitter</a></li>
+        <ul class="footer-social">
+          <li><a href="#" class="social-item">facebook</a></li>
+          <li><a href="#" class="social-item">instagram</a></li>
+          <li><a href="#" class="social-item">twitter</a></li>
         </ul>
-      </div>
-      <ul class="user-navigation">
-        <li><a href="#">Войти</a></li>
-        <li><a href="#">Сравнить</a></li>
-        <li><a href="#">Корзина</a></li>
-      </ul>
-      <p class="footer-phone">Тел.: +7 (495) 495-95-95</p>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Академия</a>
-    </footer>
+        <ul class="footer-menu">
+          <li><a href="#" class="menu-item">Войти</a></li>
+          <li><a href="#" class="menu-item">Сравнить</a></li>
+          <li><a href="#" class="menu-item">Корзина</a></li>
+        </ul>
+        <a href="tel:+74954959595" class="footer-phone">
+          Тел.: +7 (495) 495-95-95
+        </a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="academy-logo">
+          HTML Академия
+        </a>
+      </footer>
+    </div>
   </body>
 </html>
