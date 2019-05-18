@@ -10,7 +10,7 @@
         <h1 class="visualy-hidden">Каталог магазина гаджетов «Device»</h1>
         <a href="index.html" class="header-logo">
           <img
-            src="http://placehold.it/164x197"
+            src="img/logo_black.svg"
             alt="Логотип магазина «Device»"
             width="164"
             height="36"
@@ -29,23 +29,21 @@
             <li><a href="#" class="nav-item">Сравнить</a></li>
             <li><a href="#" class="nav-item">Корзина</a></li>
           </ul>
-          <ul class="menu-list">
-            <li><a href="#" class="menu-item">Каталог товаров</a></li>
-            <li><a href="#" class="menu-item">Доставка</a></li>
-            <li><a href="#" class="menu-item">Гарантия</a></li>
-            <li><a href="#" class="menu-item">Контакты</a></li>
-          </ul>
         </nav>
+        <ul class="user-menu">
+          <li><a href="#" class="menu-item">Каталог товаров</a></li>
+          <li><a href="#" class="menu-item">Доставка</a></li>
+          <li><a href="#" class="menu-item">Гарантия</a></li>
+          <li><a href="#" class="menu-item">Контакты</a></li>
+        </ul>
       </header>
       <main class="main-container">
         <h2>Моноподы для селфи</h2>
-        <div class="breadcrumb">
-          <ul class="breadcrumb-list">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="catalog.html">Каталог товаров</a></li>
-            <li>Моноподы для селфи</li>
-          </ul>
-        </div>
+        <ul class="breadcrumb-list">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Каталог товаров</a></li>
+          <li>Моноподы для селфи</li>
+        </ul>
         <!-- Скоро тут будет фильтр и сортировка -->
         <aside class="filter">
           <h3>Фильтр</h3>
@@ -95,19 +93,14 @@
                   </label>
                 </fieldset>
               </div>
-              <button class="button" type="button">Показать</button>
+              <button class="button" type="submit">Показать</button>
             </form>
           </div>
         </aside>
         <section class="card-list">
-          <article class="card">
+          <div class="card">
             <div class="card-img">
-              <img
-                src="http://placehold.it/360x380"
-                alt=""
-                width="360"
-                height="380"
-              />
+              <img src="img/item-1.jpg" alt="" width="360" height="380" />
             </div>
             <div class="card-caption">
               <h3>Любительская селфи палка</h3>
@@ -115,15 +108,10 @@
                 500 руб.
               </span>
             </div>
-          </article>
-          <article class="card">
+          </div>
+          <div class="card">
             <div class="card-img">
-              <img
-                src="http://placehold.it/360x380"
-                alt=""
-                width="360"
-                height="380"
-              />
+              <img src="img/item-2.jpg" alt="" width="360" height="380" />
             </div>
             <div class="card-caption">
               <h3>Профессиональная селфи-палка</h3>
@@ -131,15 +119,10 @@
                 1500 руб.
               </span>
             </div>
-          </article>
-          <article class="card">
+          </div>
+          <div class="card">
             <div class="card-img">
-              <img
-                src="http://placehold.it/360x380"
-                alt=""
-                width="360"
-                height="380"
-              />
+              <img src="img/item-3.jpg" alt="" width="360" height="380" />
             </div>
             <div class="card-caption">
               <h3>Непотопляемая селфи-палка</h3>
@@ -147,15 +130,10 @@
                 2500 руб.
               </span>
             </div>
-          </article>
-          <article class="card">
+          </div>
+          <div class="card">
             <div class="card-img">
-              <img
-                src="http://placehold.it/360x380"
-                alt=""
-                width="360"
-                height="380"
-              />
+              <img src="img/item-4.jpg" alt="" width="360" height="380" />
             </div>
             <div class="card-caption">
               <h3>Селфи-палка «Следуй за мной»</h3>
@@ -163,13 +141,13 @@
             <span class="price">
               4900 руб.
             </span>
-          </article>
+          </div>
         </section>
       </main>
       <footer class="footer">
         <a class="footer-logo">
           <img
-            src="http://placehold.it/164x197"
+            src="img/logo.svg"
             alt="Логотип магазина «Device»"
             width="164"
             height="36"
@@ -192,9 +170,11 @@
           <li><a href="#" class="menu-item">Сравнить</a></li>
           <li><a href="#" class="menu-item">Корзина</a></li>
         </ul>
-        <a href="tel:+74954959595" class="footer-phone">
-          Тел.: +7 (495) 495-95-95
-        </a>
+
+        <span class="footer-phone">
+          Тел.:<a href="tel:+74954959595">+7 (495) 495-95-95 </a>
+        </span>
+
         <a href="https://htmlacademy.ru/intensive/htmlcss" class="academy-logo">
           HTML Академия
         </a>
