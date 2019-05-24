@@ -15,20 +15,22 @@
             height="36"
           />
         </a>
-
-        <label class="search-wrapper visualy-hidden" for="search">
-          Поиск по сайту
-        </label>
-        <input
-          id="search"
-          class="header-search"
-          type="search"
-          placeholder="Поиск по сайту"
-        />
+        <div class="search-wrapper">
+          <label class="header-search visualy-hidden" for="search">
+            Поиск по сайту
+          </label>
+          <input
+            id="search"
+            class="input-search"
+            type="search"
+            placeholder="Поиск по сайту"
+          />
+          <button type="button">Найти</button>
+        </div>
         <ul class="user-menu">
-          <li><a href="#" class="menu-item">Войти</a></li>
-          <li><a href="#" class="menu-item">Сравнить</a></li>
-          <li><a href="#" class="menu-item">Корзина</a></li>
+          <li><a href="#" class="menu-item menu-login">Войти</a></li>
+          <li><a href="#" class="menu-item menu-diff">Сравнить</a></li>
+          <li><a href="#" class="menu-item menu-cart">Корзина</a></li>
         </ul>
         <nav class="header-nav">
           <ul class="nav-list">
@@ -73,12 +75,10 @@
               Вы можете забрать товар сами, заехав в наш офис. Заодно, вы
               сможете проверить работоспособность покупки. Всякое бывает.
             </p>
-            <div class="map">
-              <img
-                src="img/map.png"
-                alt="Карта, адрес магазина: г. Москва, ул. Строителей, 15"
-              />
-            </div>
+            <div
+              class="map"
+              aria-label="Карта, адрес магазина: г. Москва, ул. Строителей, 15"
+            ></div>
             <a href="#" class="button">Напишите нам</a>
           </div>
         </section>
@@ -94,9 +94,9 @@
             />
           </a>
           <ul class="footer-menu">
-            <li><a href="#" class="menu-item">Войти</a></li>
-            <li><a href="#" class="menu-item">Сравнить</a></li>
-            <li><a href="#" class="menu-item">Корзина</a></li>
+            <li><a href="#" class="menu-item menu-login">Войти</a></li>
+            <li><a href="#" class="menu-item menu-diff">Сравнить</a></li>
+            <li><a href="#" class="menu-item menu-cart">Корзина</a></li>
           </ul>
         </div>
         <div class="footer-middle">
@@ -115,9 +115,9 @@
         </div>
         <div class="footer-bottom">
           <ul class="footer-social">
-            <li><a href="#" class="social-item">facebook</a></li>
-            <li><a href="#" class="social-item">instagram</a></li>
-            <li><a href="#" class="social-item">twitter</a></li>
+            <li><a href="#" class="social-item social-face">facebook</a></li>
+            <li><a href="#" class="social-item social-inst">instagram</a></li>
+            <li><a href="#" class="social-item social-twit">twitter</a></li>
           </ul>
           <a
             href="https://htmlacademy.ru/intensive/htmlcss"
@@ -128,5 +128,39 @@
         </div>
       </footer>
     </div>
+    <section class="modal-writeus">
+      <div class="modal-writeus-wrapper">
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <label class="modal-input input-name">
+            <span>Ваше имя:</span>
+            <input type="text" name="username" placeholder="Имя Фамилия" />
+          </label>
+          <label class="modal-input input-email">
+            <span>Ваше e-mail:</span>
+            <input type="email" name="email" placeholder="email@example.com" />
+          </label>
+          <label class="modal-input input-texarea">
+            <span>Текст письма:</span>
+            <textarea
+              rows="6"
+              cols="50"
+              type="text"
+              name="email"
+              placeholder="В свободной форме"
+            ></textarea>
+          </label>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+        <button class="button-close" type="button">Закрыть</button>
+      </div>
+    </section>
+    <section class="modal-map">
+      <div class="modal-map-wrapper">
+        <div class="map" id="map">
+          <!-- тут будет карта -->
+        </div>
+        <button class="button-close" type="button">Закрыть</button>
+      </div>
+    </section>
   </body>
 </html>
