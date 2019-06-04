@@ -18,7 +18,12 @@
             height="36"
           />
         </a>
-        <div class="search-wrapper">
+        <div class="row-wrapper">
+            <form
+            class="search-form"
+            action="https://echo.htmlacademy.ru"
+            method="get"
+          >
           <label class="header-search visualy-hidden" for="search">
             Поиск по сайту
           </label>
@@ -28,15 +33,15 @@
             type="search"
             placeholder="Поиск по сайту"
           />
-          <button type="button">Найти</button>
-        </div>
-
+          <button type="button" style="display:none">Найти</button>
+          </form>
         <ul class="user-menu">
           <li><a href="#" class="menu-item menu-username">Валентин Петухов</a></li>
-          <li><a href="#" class="menu-item menu-login">Войти</a></li>
+          <li><a href="#" class="menu-item menu-login">Выйти</a></li>
           <li><a href="#" class="menu-item menu-diff">Сравнить</a></li>
           <li><a href="#" class="menu-item menu-cart">Корзина</a></li>
         </ul>
+        </div>
         <nav class="header-nav">
           <ul class="nav-list">
             <li><a href="#" class="nav-item">Каталог товаров</a></li>
@@ -54,11 +59,12 @@
           <li><a class="breadcrumb-current">Моноподы для селфи</a></li>
         </ul>
         <!-- Скоро тут будет фильтр и сортировка -->
+        <div class="catalog-wrapper">
         <section class="filter">
           <h3 class="visualy-hidden">Фильтр</h3>
           <div class="filter-wrapper">
             <form
-              class="filter"
+              class="filter-form"
               action="https://echo.htmlacademy.ru"
               method="get"
             >
@@ -105,7 +111,7 @@
                     <span>Есть</span>
                   </label>
 
-                  <label class="field-raio">
+                  <label class="field-radio">
                     <input type="radio" name="Bluetooth" value="no" />
                     <span>Нет</span>
                   </label>
@@ -145,24 +151,28 @@
             <div class="card-caption">
               <h3>Непотопляемая селфи-палка</h3>
               <span class="price">
-                2500 руб.
+                4900 руб.
               </span>
             </div>
           </div>
           <div class="card">
-            <div class="card-img">
-              <img src="img/item-4.jpg" alt="" width="360" height="380" />
+              <div class="card-img">
+                <img src="img/item-4.jpg" alt="" width="360" height="380" />
+              </div>
+              <div class="card-caption">
+                <h3>Селфи-палка «Следуй за мной»</h3>
+                <span class="price">
+                  2500 руб.
+                </span>
+              </div>
             </div>
-            <div class="card-caption">
-              <h3>Селфи-палка «Следуй за мной»</h3>
-            </div>
-            <span class="price">
-              4900 руб.
-            </span>
-          </div>
+    
         </section>
+      </div>
       </main>
+    </div>
       <footer class="footer">
+          <div class="container">
         <div class="footer-top">
           <a class="footer-logo">
             <img
@@ -209,7 +219,8 @@
             HTML Академия
           </a>
         </div>
+      </div>
       </footer>
-    </div>
+
   </body>
 </html>
