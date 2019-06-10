@@ -32,24 +32,32 @@
               type="search"
               placeholder="Поиск по сайту"
             />
-            <button class="search-button" type="button" style="display: none;">
+            <button class="search-button" type="button">
               Найти
             </button>
           </form>
           <ul class="user-menu">
-            <li><a href="#" class="menu-item menu-login">Войти</a></li>
-            <li><a href="#" class="menu-item menu-diff">Сравнить</a></li>
-            <li><a href="#" class="menu-item menu-cart">Корзина</a></li>
+            <li class="menu-item"><a href="#" class="menu-login">Войти</a></li>
+            <li class="menu-item">
+              <a href="#" class="menu-diff">Сравнить</a>
+            </li>
+            <li class="menu-item"><a href="#" class="menu-cart">Корзина</a></li>
           </ul>
         </div>
         <nav class="header-nav">
           <ul class="nav-list">
-            <li>
+            <li class="nav-list-item">
               <a href="#" class="nav-item">Каталог товаров</a>
             </li>
-            <li><a href="#" class="nav-item">Доставка</a></li>
-            <li><a href="#" class="nav-item">Гарантия</a></li>
-            <li><a href="#" class="nav-item">Контакты</a></li>
+            <li class="nav-list-item">
+              <a href="#" class="nav-item">Доставка</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#" class="nav-item">Гарантия</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#" class="nav-item">Контакты</a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -110,9 +118,15 @@
             />
           </a>
           <ul class="footer-menu">
-            <li><a href="#" class="menu-item menu-login">Войти</a></li>
-            <li><a href="#" class="menu-item menu-diff">Сравнить</a></li>
-            <li><a href="#" class="menu-item menu-cart">Корзина</a></li>
+            <li class="menu-item menu-login">
+              <a href="#">Войти</a>
+            </li>
+            <li class="menu-item menu-diff">
+              <a href="#">Сравнить</a>
+            </li>
+            <li class="menu-item menu-cart">
+              <a href="#">Корзина</a>
+            </li>
           </ul>
         </div>
         <div class="footer-middle">
@@ -131,15 +145,27 @@
         </div>
         <div class="footer-bottom">
           <ul class="footer-social">
-            <li><a href="#" class="social-item social-face">facebook</a></li>
-            <li><a href="#" class="social-item social-inst">instagram</a></li>
-            <li><a href="#" class="social-item social-twit">twitter</a></li>
+            <li>
+              <a href="#" class="social-item social-face">
+                <span class="visualy-hidden">facebook</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-item social-inst"
+                ><span class="visualy-hidden">instagram</span></a
+              >
+            </li>
+            <li>
+              <a href="#" class="social-item social-twit"
+                ><span class="visualy-hidden">twitter</span></a
+              >
+            </li>
           </ul>
           <a
             href="https://htmlacademy.ru/intensive/htmlcss"
             class="academy-logo"
           >
-            HTML Академия
+            <span class="visualy-hidden">HTML Академия</span>
           </a>
         </div>
       </div>
