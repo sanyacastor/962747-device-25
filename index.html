@@ -63,7 +63,127 @@
       </header>
       <main class="main-container">
         <h1 class="visualy-hidden">Магазин гаджетов «Device»</h1>
-        <!-- Скоро тут будет блок галерея и доставка -->
+        <section class="slider">
+          <div class="slider-wrapper">
+            <div class="slider-column">
+              <div class="slider-image">
+                <img
+                  class="slider-img"
+                  src="img/slider-1.png"
+                  alt="Самая длинная палка для селфи"
+                />
+              </div>
+            </div>
+            <div class="slider-column">
+              <p class="slider-slogan">
+                Делай селфи,<br />
+                как Бен Стиллер!
+              </p>
+              <p class="slider-description">
+                Самая длинная палка для селфи доступна в нашем магазине. Восемь
+                (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+              </p>
+              <a href="#" class="button">Подробнее</a>
+              <ul class="slider-buttons">
+                <li>
+                  <button class="slider-button slider-button-active"></button>
+                </li>
+                <li>
+                  <button class="slider-button"></button>
+                </li>
+                <li>
+                  <button class="slider-button"></button>
+                </li>
+              </ul>
+              <ul class="features-list">
+                <li class="feature">
+                  <span>8.5 м</span>
+                  Длинна палки
+                </li>
+                <li class="feature">
+                  <span>5 кг</span>
+                  Вес палки
+                </li>
+                <li class="feature">
+                  <span>Карбон</span>
+                  Материал
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="popular">
+          <ul class="popular-wrapper">
+            <li class="popular-item">
+              <a href="#">
+                <div class="popular-img img-vr"></div>
+                <span>Виртуальная реальность</span>
+              </a>
+            </li>
+            <li class="popular-item">
+              <a href="#">
+                <div class="popular-img img-monopod"></div>
+                <span>Моноподы для селфи</span>
+              </a>
+            </li>
+            <li class="popular-item">
+              <a href="#">
+                <div class="popular-img img-actioncam"></div>
+                <span>Экшн-камеры</span>
+              </a>
+            </li>
+            <li class="popular-item">
+              <a href="#">
+                <div class="popular-img img-fitnesband"></div>
+                <span>Фитнес-браслеты</span>
+              </a>
+            </li>
+            <li class="popular-item">
+              <a href="#">
+                <div class="popular-img img-watch"></div>
+                <span>Умные часы</span>
+              </a>
+            </li>
+            <li class="popular-item">
+              <a href="#">
+                <div class="popular-img img-quadrocop"></div>
+                <span>Квадрокоптеры</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="delivery">
+          <div class="delivery-wrapper">
+            <div class="delivery-menu">
+              <ul class="delivery-menu-list">
+                <li>
+                  <a class="button delivert-active" href="#"> Доставка</a>
+                </li>
+                <li>
+                  <a class="button" href="#"> Гарантия</a>
+                </li>
+                <li><a class="button" href="#"> Кредит</a></li>
+              </ul>
+            </div>
+            <div class="delivery-text">
+              <h3>Доставка</h3>
+              <p>
+                Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+                совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
+                на ваш этаж.
+              </p>
+            </div>
+            <div class="delivery-img"></div>
+          </div>
+        </section>
+        <section class="partners-logos">
+          <ul class="partners-logos-list">
+            <li class="logo-item logo-dji"></li>
+            <li class="logo-item logo-spg"></li>
+            <li class="logo-item logo-gopro"></li>
+            <li class="logo-item logo-vive"></li>
+          </ul>
+        </section>
         <div class="main-columns">
           <section class="about">
             <div class="about-container">
@@ -171,35 +291,50 @@
       </div>
     </footer>
 
-    <section class="modal modal-writeus" style="display:none;">
+    <section class="modal modal-writeus">
+      <h2 class="visualy-hidden">Форма обнатной связи</h2>
       <div class="modal-writeus-wrapper">
-        <form action="https://echo.htmlacademy.ru" method="get">
-          <label class="modal-input input-name">
-            <span>Ваше имя:</span>
-            <input type="text" name="username" placeholder="Имя Фамилия" />
-          </label>
-          <label class="modal-input input-email">
-            <span>Ваше e-mail:</span>
-            <input type="email" name="email" placeholder="email@example.com" />
-          </label>
-          <label class="modal-input input-texarea">
-            <span>Текст письма:</span>
-            <textarea
-              rows="6"
-              cols="50"
-              type="text"
-              name="email"
-              placeholder="В свободной форме"
-            ></textarea>
-          </label>
+        <form
+          class="modal-writeus-form"
+          action="https://echo.htmlacademy.ru"
+          method="get"
+        >
+          <p class="modal-input-item">
+            <label class="modal-input input-name">
+              <span>Ваше имя:</span>
+              <input type="text" name="username" placeholder="Имя Фамилия" />
+            </label>
+          </p>
+          <p class="modal-input-item">
+            <label class="modal-input input-email">
+              <span>Ваш e-mail:</span>
+              <input
+                type="email"
+                name="email"
+                placeholder="email@example.com"
+              />
+            </label>
+          </p>
+          <p class="modal-input-item input-texarea">
+            <label class="modal-input">
+              <span>Текст письма:</span>
+              <textarea
+                rows="5"
+                cols="50"
+                name="email"
+                placeholder="В свободной форме"
+              ></textarea>
+            </label>
+          </p>
           <button class="button" type="submit">Отправить</button>
         </form>
         <button class="button-close" type="button">Закрыть</button>
       </div>
     </section>
-    <section class="modal modal-map" style="display:none">
+    <section class="modal modal-map" style="display:none;">
+      <h2 class="visualy-hidden">Карта проезда</h2>
       <div class="modal-map-wrapper">
-        <div class="map" id="map">
+        <div class="mmap" id="map">
           <!-- тут будет карта -->
         </div>
         <button class="button-close" type="button">Закрыть</button>
