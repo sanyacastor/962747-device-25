@@ -26,12 +26,12 @@
             <label class="header-search visualy-hidden" for="search">
               Поиск по сайту
             </label>
-              <input
-                id="search"
-                class="input-search"
-                type="search"
-                placeholder="Поиск по сайту"
-              />
+            <input
+              id="search"
+              class="input-search"
+              type="search"
+              placeholder="Поиск по сайту"
+            />
             <button class="search-button" type="button">
               Найти
             </button>
@@ -64,6 +64,7 @@
       <main class="main-container">
         <h1 class="visualy-hidden">Магазин гаджетов «Device»</h1>
         <section class="slider">
+            <h2 class="visualy-hidden">Самые интересные</h2>
           <div class="slider-wrapper">
             <div class="slider-column">
               <div class="slider-image">
@@ -113,6 +114,7 @@
           </div>
         </section>
         <section class="popular">
+          <h2 class="visualy-hidden">Популярные категории товаров</h2>
           <ul class="popular-wrapper">
             <li class="popular-item">
               <a href="#">
@@ -152,8 +154,10 @@
             </li>
           </ul>
         </section>
+      </main>
+    </div>
         <section class="delivery">
-          <div class="delivery-wrapper">
+          <div class="delivery-wrapper container">
             <div class="delivery-menu">
               <ul class="delivery-menu-list">
                 <li>
@@ -176,7 +180,9 @@
             <div class="delivery-img"></div>
           </div>
         </section>
+        <div class="container">
         <section class="partners-logos">
+          <h2 class="visualy-hidden">Наши партнеры</h2>
           <ul class="partners-logos-list">
             <li class="logo-item logo-dji"></li>
             <li class="logo-item logo-spg"></li>
@@ -184,6 +190,7 @@
             <li class="logo-item logo-vive"></li>
           </ul>
         </section>
+        
         <div class="main-columns">
           <section class="about">
             <div class="about-container">
@@ -331,14 +338,17 @@
         <button class="button-close" type="button">Закрыть</button>
       </div>
     </section>
-    <section class="modal modal-map" style="display:none;">
+    <section class="modal modal-map">
       <h2 class="visualy-hidden">Карта проезда</h2>
-      <div class="modal-map-wrapper">
-        <div class="mmap" id="map">
-          <!-- тут будет карта -->
-        </div>
+      <div class="modal-map-wrapper" id="map">
+        <div class="mmap" ></div>
         <button class="button-close" type="button">Закрыть</button>
       </div>
     </section>
+    <script
+    src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=6012b38c-991c-4c8d-bc3b-07c43cf9a318"
+    type="text/javascript"
+  ></script>
+  <script src="js/map.js" type="text/javascript"></script>
   </body>
 </html>
