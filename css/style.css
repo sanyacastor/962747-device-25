@@ -822,9 +822,11 @@ a {
 }
 
 .field-checkbox {
+  cursor: pointer;
   position: relative;
   padding-left: 50px;
 }
+
 .checkbox-input {
   position: absolute;
   opacity: 0;
@@ -838,16 +840,47 @@ a {
   background-repeat: no-repeat;
   background-position: 0 0;
   margin-left: -40px;
+  opacity: 1;
 }
+
+.checkbox-input:hover + .check-box::before,
+.checkbox-input:focus + .check-box::before {
+  background-image: url("../img/checkbox-off.svg");
+  opacity: 0.6;
+}
+
+.checkbox-input:active .check-box::before {
+  background-image: url("../img/checkbox-on.svg");
+  opacity: 1;
+}
+
 .checkbox-input:checked + .check-box::before {
   background-image: url("../img/checkbox-on.svg");
+  opacity: 1;
 }
-.checkbox-input:focus + .check-box::before {
-  box-shadow: 0 0 0 1px #f0c52e;
+.checkbox-input:hover:checked + .check-box::before,
+.checkbox-input:focus:checked + .check-box::before {
+  background-image: url("../img/checkbox-on.svg");
+  opacity: 0.6;
 }
+
+.checkbox-input:checked:active + .check-box::before {
+  background-image: url("../img/checkbox-off.svg");
+  opacity: 1;
+}
+
+.checkbox-input:disabled + .check-box::before,
+.checkbox-input:disabled:checked + .check-box::before {
+  opacity: 0.25;
+}
+
 .radio-input {
   position: absolute;
   opacity: 0;
+}
+
+.radio-box {
+  cursor: pointer;
 }
 
 .radio-box::before {
@@ -859,10 +892,40 @@ a {
   background-repeat: no-repeat;
   background-position: 0 0;
   margin-left: -40px;
+  opacity: 1;
+}
+.radio-input:hover + .radio-box::before,
+.radio-input:focus + .radio-box::before {
+  background-image: url("../img/radio-off.svg");
+  opacity: 0.6;
+}
+.radio-input:active + .radio-box::before {
+  background-image: url("../img/radio-on.svg");
+  opacity: 1;
 }
 
 .radio-input:checked + .radio-box::before {
   background-image: url("../img/radio-on.svg");
+}
+.radio-input:checked:hover + .radio-box::before {
+  background-image: url("../img/radio-on.svg");
+  opacity: 0.6;
+}
+
+.radio-input:checked:hover + .radio-box::before,
+.radio-input:checked:focus + .radio-box::before {
+  background-image: url("../img/radio-on.svg");
+  opacity: 0.6;
+}
+.radio-input:checked:active + .radio-box::before {
+  background-image: url("../img/radio-off.svg");
+  opacity: 1;
+}
+
+.radio-input:hover .radio-box::before,
+.radio-input:focus .radio-box::before {
+  background-image: url("../img/radio-on.svg");
+  opacity: 0.6;
 }
 
 /* Каталог */
