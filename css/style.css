@@ -80,7 +80,7 @@ a {
   background-color: transparent;
   border: none;
   font-size: 15px;
-  padding-bottom: 8px;
+  padding-bottom: 4px;
   margin-right: 150px;
 }
 
@@ -101,6 +101,9 @@ a {
 }
 
 .search-button {
+  position: absolute;
+  top: -20px;
+  left: 250px;
   display: none;
   font-size: 15px;
   line-height: 2;
@@ -111,18 +114,32 @@ a {
   background: transparent;
 }
 
+.search-button::after {
+  content: "";
+  width: 300px;
+  height: 2px;
+  bottom: -2px;
+  right: 0;
+  position: absolute;
+  background: black;
+  opacity: 0;
+}
+
+.input-search:focus + .search-button::after {
+  opacity: 1;
+}
+
 .input-search:focus + .search-button {
   display: inline-block;
 }
 
-.input-search:focus {
+.input-search:focus + .search-form {
   border-bottom: 2px solid black;
 }
 
 .search-form {
   position: relative;
   display: flex;
-  align-items: flex-end;
 }
 .search-button:hover,
 .search-button:focus {
@@ -392,7 +409,7 @@ a {
   position: absolute;
   width: 164px;
   height: 36px;
-  top: -18px;
+  top: 20px;
 }
 
 .main-header {
@@ -459,6 +476,7 @@ a {
 }
 
 .nav-list-item {
+  position: relative;
   margin: 0;
   padding: 0;
 }
@@ -669,6 +687,18 @@ a {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+.nav-catalog::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 2px;
+  right: -6px;
+  background: url("../img/plus.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
 
 .footer .menu-cart::before {
   content: "";
@@ -797,8 +827,7 @@ a {
 }
 .checkbox-input {
   position: absolute;
-  appearance: none;
-  -webkit-appearance: none;
+  opacity: 0;
 }
 .check-box::before {
   content: "";
@@ -868,26 +897,29 @@ a {
   padding: 0;
   padding-bottom: 45px;
 }
+
 .breadcrumb-list li {
   position: relative;
   padding-right: 40px;
 }
 
 .catalog-wrapper {
+  clear: both;
   display: flex;
-}
-
-.filter-wrapper {
-  width: 280px;
-  padding-top: 210px;
-  /* padding-left: 10px; */
-  padding-right: 80px;
 }
 
 .filter {
   width: 270px;
   background: #efefef;
   position: relative;
+  padding-right: 200px;
+}
+
+.filter-wrapper {
+  clear: both;
+  width: 270px;
+  padding-top: 210px;
+  padding-right: 70px;
 }
 
 .filter-bluetooth {
@@ -900,12 +932,14 @@ a {
 .filter::before {
   display: block;
   content: "";
-  width: 100vh;
+  width: 200vh;
   height: 100%;
   background: #efefef;
   position: absolute;
   top: 0;
-  right: 270px;
+  right: 250px;
+  transform: translateX(100px);
+  z-index: -1;
 }
 
 .filter fieldset {
@@ -948,6 +982,7 @@ a {
   justify-content: space-between;
   padding-left: 70px;
   padding-top: 70px;
+  width: 830px;
 }
 
 .card {
