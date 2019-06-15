@@ -429,6 +429,7 @@ a {
 }
 
 .header-nav {
+  position: relative;
   margin: 0;
   padding: 0;
 }
@@ -1468,30 +1469,6 @@ a {
   display: none;
 }
 
-/* .delivery::before {
-  content: "";
-  width: 100vh;
-  height: 100%;
-  background: #e5e5e5;
-  background: blue;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateX(-100%);
-}
-
-.delivery::after {
-  content: "";
-  width: 100vh;
-  height: 100%;
-  background: #e5e5e5;
-  background: blue;
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translateX(100%);
-} */
-
 .delivery-text {
   width: 550px;
   margin-top: -72px;
@@ -1569,4 +1546,42 @@ a {
 .logo-vive:focus {
   background-image: url("../img/sp-logo-4.png");
   transition: all 0.2s ease-in-out;
+}
+
+.nav-catalog-dropdown {
+  display: none;
+  width: 1160px;
+  padding: 25px;
+  position: absolute;
+  top: 175px;
+  background: #f7e296;
+  z-index: 999;
+}
+.nav-catalog-list {
+  margin: 0;
+  padding-left: 35px;
+  /* padding-top: 30px; */
+  height: 115px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+.catalog-item {
+  min-width: 132px;
+  margin-right: 65px;
+  padding: 0;
+  margin-bottom: 6px;
+}
+
+.catalog-item:last-child {
+  height: 100%;
+}
+
+.catalog-item a {
+  font-style: 15px;
+  line-height: 2;
+  color: black;
 }
