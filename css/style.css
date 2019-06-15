@@ -1126,8 +1126,6 @@ a {
   color: rgba(70, 70, 70, 0.4);
 }
 
-/* Модалки */
-
 .modal {
   display: none;
   background: white;
@@ -1187,17 +1185,24 @@ a {
 }
 
 .modal-input-item {
-  /* background: coral; */
   width: 360px;
 }
 
 .modal-input-item input,
 .modal-input-item textarea {
-  background-color: rgba(242, 242, 242, 1);
+  background-color: rgba(242, 242, 242, 0.5);
   display: block;
   padding: 20px;
   font-size: 14px;
   width: 100%;
+}
+
+.modal-input-item input::placeholder {
+  background-color: transparent;
+}
+
+.modal-input-item input:focus::placeholder {
+  color: #464646;
 }
 
 .input-texarea {
@@ -1212,6 +1217,34 @@ a {
 .modal-writeus .button {
   margin-top: 25px;
   padding: 0 33px;
+}
+
+.modal-input-item:hover input {
+  background-color: rgba(242, 242, 242, 0.8);
+  box-sizing: border-box;
+}
+
+.modal-input-item:hover textarea {
+  background-color: rgba(242, 242, 242, 0.8);
+  box-sizing: border-box;
+}
+
+.modal-input-item input:focus {
+  background: white;
+  outline: 3px solid #f0c52e;
+}
+
+.modal-input-item textarea:focus {
+  background: white;
+  outline: 3px solid #f0c52e;
+  color: #464646;
+}
+.modal-input-item textarea:focus::placeholder {
+  color: #464646;
+}
+
+.modal-input-item input:invalid:not(:focus) {
+  background: rgba(237, 181, 181, 0.5);
 }
 
 /* слайдер */
@@ -1557,6 +1590,7 @@ a {
   background: #f7e296;
   z-index: 999;
 }
+
 .nav-catalog-list {
   margin: 0;
   padding-left: 35px;

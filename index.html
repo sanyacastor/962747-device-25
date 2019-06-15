@@ -322,13 +322,14 @@
           <p class="modal-input-item">
             <label class="modal-input input-name">
               <span>Ваше имя:</span>
-              <input type="text" name="username" placeholder="Имя Фамилия" />
+              <input required type="text" name="username" placeholder="Имя Фамилия" />
             </label>
           </p>
           <p class="modal-input-item">
             <label class="modal-input input-email">
               <span>Ваш e-mail:</span>
               <input
+                required
                 type="email"
                 name="email"
                 placeholder="email@example.com"
@@ -339,6 +340,7 @@
             <label class="modal-input">
               <span>Текст письма:</span>
               <textarea
+              required
                 rows="5"
                 cols="50"
                 name="email"
